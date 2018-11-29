@@ -70,7 +70,7 @@ function chltag_setting_function(){
         ?>
     <input name="chl_custom_lang" id="chl-tag-sid" value="<?php echo get_option( 'chl_custom_lang' ); ?>" class="chl-tag-sclass" type="text" maxlength="12">
     <p class="description" id="chl-tag-description"><?php _e( 'Add your custom html language attribute. eg. en, en-US, en-GB, hi, hi-IN etc.', 'chl-change-html-lang' ) ?></p>
-    <p class="description" id="chl-tag-description"><?php _e( 'BE CAREFUL. Do not use &quot; &quot; before and after. It will be automatically added.', 'chl-change-html-lang' ) ?></p>
+    <p class="description" id="chl-tag-description"><?php _e( 'Do not use &quot; &quot; before and after. It will be automatically added.', 'chl-change-html-lang' ) ?></p>
     <?php
 }
 
