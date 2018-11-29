@@ -1,5 +1,5 @@
 # CHL-Change HTML Lang
-*CHL-Change HTML Lang is a simple WordPress plugin that change html language attribute(language_attributes();) value in header.*
+*CHL-Change HTML Lang is a simple and very lightweight WordPress SEO plugin for changing HTML language attribute value in the header.*
 
 ## Description
 
