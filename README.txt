@@ -4,19 +4,23 @@ Tags: SEO, HTML lang, SEO Plugin, Language Attributes, pratikkry
 Requires at least: 4.6
 Tested up to: 5.0
 Requires PHP: 5.2
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-CHL-Change HTML Lang is a simple WordPress plugin that change html language attribute(language_attributes();) value in header.
+CHL-Change HTML Lang is a simple WordPress SEO plugin for changing HTML language attribute value in the header.
 
 == Description ==
-*CHL-Change HTML Lang is a simple WordPress plugin that change html language attribute(language_attributes();) value in header.*
+*CHL-Change HTML Lang is a simple WordPress SEO plugin for changing HTML language attribute(language_attributes();) value in header.*
 
 Many of us use WordPress(Admin area UI) in the English version but write their content in another language. So by default WordPress uses English(en-US) language attribute for `<?php language_attributes(); ?>` used in **header.php**.
 For example - If you write your content in Hindi language but use WordPress(Admin area UI) in English, your html language attribute must be **hi** or **hi-IN** for many reasons including SEO but WordPress echo html language attribute of installed locale version (en-US by default).
 You can't change HTML language attribute directly so I created this plugin(CHL-Change HTML Lang) that allows you to change HTML language attribute from the dashboard.
 **After activating this plugin simply visit *Settings → General* and change HTML lang tag.**
+
+### Bug reports
+
+Bug reports for CHL-Change HTML Lang are [welcomed on GitHub](https://github.com/pratikkry/chl-change-html-lang/).
 
 == Installation ==
 1. Go to your admin area and select Plugins → Add New from the menu.
