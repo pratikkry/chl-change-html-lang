@@ -18,10 +18,6 @@ For example - If you write your content in Hindi language but use WordPress(Admi
 You can't change HTML language attribute directly so I created this plugin(CHL-Change HTML Lang) that allows you to change HTML language attribute from the dashboard.
 **After activating this plugin simply visit *Settings → General* and change HTML lang tag.**
 
-### Bug reports
-
-Bug reports for CHL-Change HTML Lang are [welcomed on GitHub](https://github.com/pratikkry/chl-change-html-lang/).
-
 == Installation ==
 1. Go to your admin area and select Plugins → Add New from the menu.
 2. Search for "CHL-Change HTML Lang".
