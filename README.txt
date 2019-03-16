@@ -45,7 +45,7 @@ You can use it without any errors.
 
 == Changelog ==
 = 1.1.0 =
-* FIXED: Follow as close as possible to WordPress Coding Standards
+* Tested up to 5.1.1
 
 = 1.0.3 =
 * Add support for Yoast Open Graph tag (og:locale)

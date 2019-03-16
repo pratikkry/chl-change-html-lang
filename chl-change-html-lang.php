@@ -2,17 +2,17 @@
 
 /**
  *
- * @link              https://profiles.wordpress.org/pratikthink
+ * @link              https://profiles.wordpress.org/pratikkry
  * @since             1.0.0
  * @package           Chl_Change_Html_Lang
  *
  * @wordpress-plugin
  * Plugin Name:       CHL-Change HTML Lang
- * Plugin URI:        https://www.gyanchowk.com/chl-change-html-lang
+ * Plugin URI:        https://wordpress.org/plugins/chl-change-html-lang/
  * Description:       A simple and very lightweight WordPress SEO plugin for changing HTML language attribute value in the header.
- * Version:           1.0.3
- * Author:            P. Kumar
- * Author URI:        https://profiles.wordpress.org/pratikthink
+ * Version:           1.1.0
+ * Author:            pratik k. yadav
+ * Author URI:        https://pratikkry.com
  * License:           GPL v3
  * Text Domain:       chl-change-html-lang
  */
@@ -91,5 +91,6 @@ function chl_ystwpseo_change_og_locale( $locale ) {
 	return $locale;
 	}
 }
+
 // If your locale is not supported by the facebook, Yoast plugin will output the best match for your language.
 add_filter( 'wpseo_locale', 'chl_ystwpseo_change_og_locale' );
