@@ -1,10 +1,10 @@
 === CHL-Change HTML Lang ===
-Contributors: pratikthink, pratikkry
+Contributors: pratikkry
 Tags: SEO, HTML lang, SEO Plugin, Language Attributes, pratikkry
 Requires at least: 4.6
-Tested up to: 5.0
+Tested up to: 5.1.1
 Requires PHP: 5.2
-Stable tag: 1.0.3
+Stable tag: 1.1.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,6 +44,9 @@ You can use it without any errors.
 1. Navigate to Settings → General for changing HTML lang=
 
 == Changelog ==
+= 1.1.0 =
+* FIXED: Follow as close as possible to WordPress Coding Standards
+
 = 1.0.3 =
 * Add support for Yoast Open Graph tag (og:locale)
 
