@@ -10,7 +10,7 @@
  * Plugin Name:       CHL-Change HTML Lang
  * Plugin URI:        https://wordpress.org/plugins/chl-change-html-lang/
  * Description:       A simple and very lightweight WordPress SEO plugin for changing HTML language attribute value in the header.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Author:            pratik k. yadav
  * Author URI:        https://pratikkry.com
  * License:           GPL v3
