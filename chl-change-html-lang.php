@@ -10,9 +10,9 @@
  * Plugin Name:       CHL-Change HTML Lang
  * Plugin URI:        https://wordpress.org/plugins/chl-change-html-lang/
  * Description:       A simple and very lightweight WordPress SEO plugin for changing HTML language attribute value in the header.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Author:            pratik k. yadav
- * Author URI:        https://pratikkry.com
+ * Author URI:        https://pratikkry.github.io
  * License:           GPL v3
  * Text Domain:       chl-change-html-lang
  */
@@ -68,7 +68,7 @@ function chltag_section_description(){
 
 function chltag_setting_function(){
         ?>
-    <input name="chl_custom_lang" id="chl-tag-sid" value="<?php echo get_option( 'chl_custom_lang' ); ?>" class="chl-tag-sclass" type="text" maxlength="12">
+    <input name="chl_custom_lang" id="chl-tag-sid" value="<?php echo get_option( 'chl_custom_lang' ); ?>" class="chl-tag-sclass" type="text" maxlength="120">
     <p class="description" id="chl-tag-description"><?php _e( 'Add your custom html language attribute. eg. en, en-US, en-GB, hi, hi-IN etc.', 'chl-change-html-lang' ) ?></p>
     <p class="description" id="chl-tag-description"><?php _e( 'Do not use &quot; &quot; before and after. It will be automatically added.', 'chl-change-html-lang' ) ?></p>
     <?php
@@ -76,7 +76,7 @@ function chltag_setting_function(){
 
 // This function change language_attributes
 function chl_change_html_lang_tag( $chl_tag ) {
-    $chl_tag = 'lang="' . get_option( 'chl_custom_lang' ) . '"';
+    $chl_tag = 'lang="' . esc_attr( get_option( 'chl_custom_lang' ) ) . '"';
     return $chl_tag;
 }
 add_filter('language_attributes', 'chl_change_html_lang_tag');

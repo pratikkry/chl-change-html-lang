@@ -4,7 +4,7 @@ Tags: SEO, HTML lang, SEO Plugin, Language Attributes, pratikkry
 Requires at least: 4.6
 Tested up to: 5.3
 Requires PHP: 5.2
-Stable tag: 1.1.1
+Stable tag: 1.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,6 +44,9 @@ You can use it without any errors.
 1. Navigate to Settings → General for changing HTML lang=
 
 == Changelog ==
+= 1.1.2 =
+* security fix
+
 = 1.1.1 =
 * Tested up to WordPress 5.3
 
