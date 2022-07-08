@@ -2,3 +2,4 @@
 
 *.git export-ignore
 *.gitattributes export-ignore
+/.wordpress-org export-ignore
