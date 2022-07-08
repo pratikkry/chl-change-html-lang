@@ -1,6 +1,6 @@
 === CHL-Change HTML Lang ===
 Contributors: pratikkry
-Tags: SEO, HTML lang, SEO Plugin, Language Attributes, pratikkry
+Tags: SEO, HTML lang, Lang Attribute
 Requires at least: 4.0
 Tested up to: 6.0
 Requires PHP: 5.3
