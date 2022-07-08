@@ -10,7 +10,7 @@
  * Plugin Name:       CHL-Change HTML Lang
  * Plugin URI:        https://wordpress.org/plugins/chl-change-html-lang/
  * Description:       A simple and very lightweight WordPress SEO plugin for changing HTML language attribute value in the header.
- * Version:           1.1.3
+ * Version:           1.1.4
  * Requires at least: 4.0
  * Requires PHP:      5.3
  * Author:            Indus Deck
@@ -98,3 +98,16 @@ function chl_ystwpseo_change_og_locale( $locale ) {
 
 // If your locale is not supported by the facebook, Yoast plugin will output the best match for your language.
 add_filter( 'wpseo_locale', 'chl_ystwpseo_change_og_locale' );
+
+add_filter( 'wpseo_schema_piece_language', 'chl_ystwpseo_change_schema_lang' );
+// Suport for Yoast SEO Schema piece inLanguage
+function chl_ystwpseo_change_schema_lang( $data ) {
+    
+    $data = get_option( 'chl_custom_lang' );
+    if (strpos($data,'"') !== false) { // First check if the locale contains the string '"'
+        $data = str_replace('"', '', $data); //if yes, simply remove it from the open graph og:locale tag
+    }
+    
+    return $data;
+
+}
