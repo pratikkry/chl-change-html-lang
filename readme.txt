@@ -44,7 +44,7 @@ You can use it without any errors.
 1. Navigate to Settings → General for changing HTML lang=
 
 == Changelog ==
-= 1.1.3 =
+= 1.1.4 =
 * fixed Yoast Seo schema inLanguage data
 
 = 1.1.3 =
