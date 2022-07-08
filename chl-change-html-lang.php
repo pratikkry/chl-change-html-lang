@@ -86,13 +86,14 @@ add_filter('language_attributes', 'chl_change_html_lang_tag');
 
 // Suport for Yoast SEO Open Graph
 function chl_ystwpseo_change_og_locale( $locale ) {
-	if ( class_exists( 'WPSEO_OpenGraph' ) ) {
-	$locale = get_option( 'chl_custom_lang' );
-	if (strpos($locale,'-') !== false) { // First check if the locale contains the string '-'
-		$locale = str_replace('-', '_', $locale); //if yes, simply replace it with _ for open graph og:locale tag
-	}
-	return $locale;
-	}
+    
+    $locale = get_option( 'chl_custom_lang' );
+    if (strpos($locale,'-') !== false) { // First check if the locale contains the string '-'
+        $locale = str_replace('-', '_', $locale); //if yes, simply replace it with _ for open graph og:locale tag
+    }
+    
+    return $locale;
+
 }
 
 // If your locale is not supported by the facebook, Yoast plugin will output the best match for your language.

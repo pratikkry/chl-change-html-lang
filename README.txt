@@ -46,6 +46,7 @@ You can use it without any errors.
 == Changelog ==
 = 1.1.3 =
 * tested up to WordPress 6.0
+* fixed Yoast og locale tag issue
 
 = 1.1.2 =
 * security fix
