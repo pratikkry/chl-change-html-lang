@@ -13,7 +13,7 @@
  * Version:           1.1.4
  * Requires at least: 4.0
  * Requires PHP:      5.3
- * Author:            Indus Deck
+ * Author:            pratik from Indus Deck
  * Author URI:        https://indusdeck.com/
  * License:           GPL v3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
