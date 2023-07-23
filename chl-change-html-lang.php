@@ -27,27 +27,28 @@ if ( ! defined( 'WPINC' ) ) {
 
 // Create database field
 /* Runs when plugin is activated */
-register_activation_hook(__FILE__,'chl_tag_activate');
+register_activation_hook( __FILE__, 'chl_tag_activate' );
 
 /* Runs on plugin deactivation*/
 register_deactivation_hook( __FILE__, 'chl_tag_deactivate' );
 
 function chl_tag_activate() {
-    add_option('chl_custom_lang', 'en-US', '', 'yes');
+    add_option( 'chl_custom_lang', 'en-US', '', 'yes' );
 }
 
 function chl_tag_deactivate() {
-    delete_option('chl_custom_lang');
+    delete_option( 'chl_custom_lang' );
 }
 
 add_action( 'admin_init', 'chl_settings_init' );
 /* Register Settings Init */
 function chl_settings_init() {
     $args = array(
-            'type' => 'string',
-            'description'  => __( 'html lang.', 'chl-change-html-lang' ),
+            'type'              => 'string',
+            'description'       => __( 'html lang.', 'chl-change-html-lang' ),
             'sanitize_callback' => 'sanitize_text_field',
         );
+    
     register_setting( 'general', 'chl_custom_lang', $args );
 
     add_settings_section(
@@ -77,12 +78,16 @@ function chltag_setting_function(){
     <?php
 }
 
+add_filter( 'language_attributes', 'chl_change_html_lang_tag' );
+
 // This function change language_attributes
 function chl_change_html_lang_tag( $chl_tag ) {
     $chl_tag = 'lang="' . esc_attr( get_option( 'chl_custom_lang' ) ) . '"';
     return $chl_tag;
 }
-add_filter('language_attributes', 'chl_change_html_lang_tag');
+
+// If your locale is not supported by the facebook, Yoast plugin will output the best match for your language.
+add_filter( 'wpseo_locale', 'chl_ystwpseo_change_og_locale' );
 
 // Suport for Yoast SEO Open Graph
 function chl_ystwpseo_change_og_locale( $locale ) {
@@ -95,9 +100,6 @@ function chl_ystwpseo_change_og_locale( $locale ) {
     return $locale;
 
 }
-
-// If your locale is not supported by the facebook, Yoast plugin will output the best match for your language.
-add_filter( 'wpseo_locale', 'chl_ystwpseo_change_og_locale' );
 
 add_filter( 'wpseo_schema_piece_language', 'chl_ystwpseo_change_schema_lang' );
 // Suport for Yoast SEO Schema piece inLanguage
