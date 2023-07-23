@@ -2,9 +2,9 @@
 Contributors: pratikkry
 Tags: SEO, HTML lang, lang Attribute
 Requires at least: 4.0
-Tested up to: 6.0
+Tested up to: 6.3
 Requires PHP: 5.3
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,6 +44,9 @@ You can use it without any errors.
 1. Navigate to Settings → General for changing HTML lang=
 
 == Changelog ==
+= 1.1.5 =
+* tested up to WordPress 6.3
+
 = 1.1.4 =
 * fixed Yoast Seo schema inLanguage data
 
